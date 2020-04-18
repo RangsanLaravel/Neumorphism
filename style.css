@@ -1,0 +1,158 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeeee;
+}
+.neumorphism-form>input[type=checkbox].neumorphism,
+.neumorphism-form>input[type=radio].neumorphism{
+   position: relative;
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    background-color: #eeeeee;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2)
+    ,-5px -5px 10px rgba(255, 255, 255, 1),
+    inset 0 0 0 rgba(0,0,0,.2),
+    inset 0 0 0 rgba(255, 255, 255, .2);
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.neumorphism-form>input[type=checkbox].neumorphism:checked,
+.neumorphism-form>input[type=radio].neumorphism:checked{
+    background-color: #686de0;
+    box-shadow:0 0 0 rgba(0, 0, 0, .2)
+    ,0 0 0  rgba(255, 255, 255, 1),
+    inset 5px 5px 10px rgba(0, 0, 0, .2)
+    ,inset -5px -5px 10px rgba(255, 255, 255, .2);
+}
+.neumorphism-form>input[type=radio].neumorphism{
+    border-radius: 50%;
+}
+.neumorphism-form>input[type=checkbox].neumorphism{
+    border-radius: 20%;
+}
+.neumorphism-form>input[type=radio].neumorphism::before,
+.neumorphism-form>input[type=checkbox].neumorphism::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #eeeeee;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%) ;
+}
+.neumorphism-form>input[type=radio].neumorphism::before{
+    content: "\f111";
+    font-size: 15px;
+}
+.neumorphism-form>input[type=checkbox].neumorphism::before{
+    content: "\f00c";
+    font-size: 30px;
+}
+label{
+    color: #babecc;
+    text-shadow: 1px 1px 1px #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #5e84a2;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: -2px -2px 8px rgba(255,255,255,1),
+    -2px -2px 12px rgba(255,255,255,.5),
+   inset -2px -2px 4px rgba(255,255,255,.1),
+    2px 2px 8px rgba(0,0,0,.15);
+}
+a:hover{
+    box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+     inset -2px -2px 12px rgba(255,255,255,.5),
+     inset 2px 2px 4px rgba(255,255,255,.1),
+     inset 2px 2px 8px rgba(0,0,0,.15);
+}
+a:hover span
+{
+    display:inline-block;
+    transform:scale(0.98);
+}
+
+.form{
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 480px;
+   box-shadow: -2px -2px 6px 2px #ffffff,
+   2px 2px 6px 2px #c4c4c4;
+}
+h3{
+    color: #aabbbb;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px #ffffff,
+    -1px -1px -1px #a4a4a4;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.input{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 16px;
+    border-radius: 16px;
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 16px;
+    box-shadow: inset -4px -4px 10px 4px #ffffff,
+    inset 4px 4px 10px 4px #c4c4c4;
+    color: #aaaaaa;
+    font-size: 18px;
+    transition: 0.2s ease-out;
+}
+.input::placeholder{
+    color: #ccc;
+}
+.input:focus{
+    box-shadow:inset -1px -1px 3px 1px #ffffff,
+    inset 1px 1px 3px 1px #c4c4c4;
+}
+.btn{
+    color: #aabbbb;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 13px;
+    font-weight: 700;
+    box-shadow: -4px -4px 13px 4px #ffffff,
+    4px 4px 13px 4px #c4c4c4;
+}
+.btn:focus{
+    box-shadow: -4px -4px 8px 3px #ffffff,
+    4px 4px 8px 3px #c4c4c4 ;
+
+}
+.btn:hover{
+    box-shadow: -3px -3px 8px 3px #ffffff,
+    3px 3px 8px 3px #c4c4c4;
+}
+.btn:active{
+    color: #ff5858;
+    box-shadow: -4px -4px 13px 4px #c4c4c4,
+    4px 4px 13px 4px #dfdfdf;
+}
